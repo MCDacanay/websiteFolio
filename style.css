@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Sans:ital,wght@0,300;0,400;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+
+/*style for navigation	*/
+
+}
+.max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin:auto;
+}
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: 30px 0;
+	font-family: 'IBM Plex Sans', sans-serif;
+	background-color: tomato;
+	z-index: 1;
+
+}
+.navbar.sticky {
+	padding: 30px;
+	background-color: turquoise;
+
+}
+.navbar .max-width {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo a{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+}
+.navbar .logo a:hover {
+	color: mediumturquoise;
+}
+.navbar .logo span:hover {
+	color: yellow;
+}
+.logo a {
+	margin-left: 10px;
+}
+.navbar .menu li {
+	list-style: none;
+	display: inline-block;
+}
+.navbar .menu li a {
+	display: block;
+	color: white;
+	font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.menu li a:hover {
+color: yellow;
+}
+
+/*menu button*/
+.menu-btn {
+	cursor: pointer;
+}
+
+/*style for home section*/
+
+.home {
+	display: flex;
+	background: url("images/banner.jpg") no-repeat center;
+	height: 100vh;
+	color: rebeccapurple;
+	min-height: 500px;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+.home .max-width {
+	margin:auto 0 auto 30px;
+}
+.home .home-content .text-1 {
+font-size: 25px;
+}
+.home .home-content .text-2 {
+font-size: 40px;
+font-weight: 700;
+margin: -3px;
+}
+.home .home-content .text-3 {
+font-size: 25px;
+}
+
+.home .home-content a:hover{
+	background: mediumturquoise ;
+	color: blue;
+}
+/*.home .home-content a {
+	animation: slide 2s linear infinite;
+}*/
+@keyframes slide {
+	0%{
+		tranform: translateX(0);
+	}
+	100%{
+		transform: translateX(200px);
+	}
+}
+/*.home .home-content a {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	animation: slide 2s linear;
+}*/
+.home .home-content a {
+	display: inline-block;
+	background: red;
+	font-size: 18px;
+	padding: 10px 15px;
+	margin-top: 20px;
+	color: black;
+	font-weight: 500;
+	border-radius: 8px;
+	animation: slide 0.3s linear;
+}
+.navbar .menu li a {
+	animation: slide 0.3s linear;
+}
+
+/* style for About section*/
+
+section {
+	padding: 100px 0;
+}
+
+.about {
+	font-family: 'IBM Plex Sans', sans-serif;
+	margin: auto;
+	background: yellow;
+	display: flex;
+	background: url("images/banner-3.jpg") no-repeat center;
+/*	height: 100vh;*/
+/*	color: rebeccapurple;*/
+	min-height: 300px;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.about .title {
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 50px;
+}
+
+.about .about-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.about .about-content .column-left {
+	width: 45%;
+}
+.about .about-content .column-left img {
+	height: 300px;
+	width: 250px;
+	border-radius: 20px;
+
+}
+.about .about-content .column-right {
+	width: 55%;
+
+}
+.about .about-content .column-right p {
+	font-size: 20px;
+	font-weight: 400;
+	text-align: justify;
+/*	color: darkred;*/
+}
+
+.about .about-content .column-right .bold {
+	font-size: 22px;
+	font-weight: 700;
+	padding: 10px 0;
+}
+
+/*style for services*/
+.services {
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: black;
+/*	background: plum;*/
+	display: flex;
+	background: url("images/banner-2.jpg") no-repeat center;
+/*	height: 100vh;*/
+/*	color: rebeccapurple;*/
+	min-height: 300px;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.services .services-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.services .services-content .card {
+	width: calc(33% - 20px);
+	background: white;
+	text-align: center;
+	border-radius: 20px;
+	padding: 20px 25px;
+}
+.services .services-content .card:hover {
+	background: aqua;
+
+}
+.services .services-content .card .box {
+	transition: all 0.3s ease;
+}
+.services .services-content .card .box:hover {
+	transform: scale(1.05);
+}
+
+.services .services-content .card img {
+	height: 100px;
+	width: 100px;
+}
+.services h2 {
+	text-align:  center;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.services .services-content .card .box .text {
+	padding: 10px;
+	font-weight: 700;
+	font-size: 22px;	
+}
+
+.card .box p {
+	font-size: 18px;
+}
+
+
+
+/*styles for skills section*/
+.skills {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 18px;
+/*	background: yellowgreen;*/
+	display: flex;
+	background: url("images/banner-5.jpg") no-repeat center;
+	height: 100vh;
+/*	color: rebeccapurple;*/
+	min-height: 300px;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.skills .title {
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 50px;
+}
+.skills .skills-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.skills .skills-content .column {
+	width: calc(50% - 30px);
+
+}
+.skills .skills-content .left .text {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.skills .skills-content .left p {
+	text-align: justify;
+	font-size: 18px;
+
+}
+.skills .skills-content .left a {
+	display: inline-block;
+	background: red;
+	font-size: 18px;
+	padding: 10px 15px;
+	margin-top: 20px;
+	color: black;
+	font-weight: 500;
+	border-radius: 8px;
+/*	animation: slide 0.3s linear;*/
+}
+.skills .skills-content .left a:hover {
+	color: white;
+	background: turquoise;
+}
+.skills .skills-content .right .bar {
+	margin-bottom: 15px;
+}
+.skills .skills-content .right .info {
+	display: flex;
+	margin-bottom: 5px;
+	align-items: center;
+	justify-content: space-between;
+}
+.skills .skills-content .right span {
+	font-weight: 700;
+	font-size: 18px;
+	padding: 5px;
+}
+.skills .skills-content .right .line {
+	height: 5px;
+	width: 100%;
+	background: lightgray;
+	position: relative;
+}
+.skills .skills-content .right .line:before {
+	content:"";
+	position: absolute;
+	height: 100%;
+	left: 0;
+	right: 0;
+	background: red;
+}
+.skills-content .right .html:before{
+	width: 95%;
+}
+.skills-content .right .css3:before{
+	width: 80%;
+}
+.skills-content .right .javascript:before{
+	width: 82%;
+}
+.skills-content .right .php:before{
+	width: 85%;
+}
+.skills-content .right .mysql:before{
+	width: 81%;
+}
+
+/*style for contact*/
+.contact {
+	font-family: 'IBM Plex Sans', sans-serif;
+/*	background: pink;*/
+	display: flex;
+	background: url("images/banner-4.jpg") no-repeat center;
+	height: 100vh;
+/*	color: rebeccapurple;*/
+	min-height: 300px;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.contact .title {
+	text-align: center;
+	font-size: 30px;
+/*	padding-bottom: 50px;*/
+	color: red;
+}
+.contact .contact-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.contact .contact-content .column  {
+	width: calc(50% - 30px);
+}
+.contact .contact-content .column .text {
+	font-size: 25px;
+	font-weight: 700;
+	margin: 10px 0;
+	color: red;
+}
+.contact .contact-content .left p{
+	font-size: 18px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+.contact .contact-content .left img {
+	height: 30px;
+	width: 30px;
+}
+.contact .contact-content .right {
+	position: relative;
+	left: 700px;
+	bottom: 450px;
+}
+.right form input {
+	column-gap: 10px;
+	padding: 8px;
+	border-radius: 3px;
+}
+.right form button {
+/*	padding: 8px;*/
+	display: inline-block;
+	background: red;
+	font-size: 16px;
+	padding: 8px;
+	margin-top: 20px;
+	color: black;
+	font-weight: 500;
+	border-radius: 8px;
+	border: 2px solid black;
+}
+.right form button:hover {
+	background:turquoise;
+	color: #fffff;
+	border: none;
+}
+.contact .contact-content .info .head {
+	font-size: 18px;
+	font-weight: 700;
+	color: red;
+	padding: 5px 0;
+
+}
+.contact .contact-content .info .subtitle {
+	font-weight: 700;
+}
+/*.contact .contact-content .row {
+	display: flex;
+	align-items:  center;
+	height: 65px;
+}*/
+
+/*footer style*/
+footer {
+	height: 200px;
+	width: 100%;
+	background: turquoise;
+	text-align: center;
+	padding: 15px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	margin-top: 200px;
+}
+footer span a {
+	color: red;
+	font-weight: 700;
+
+}
+footer span a:hover{
+	text-decoration: underline;
+}
+
+/*responsive layout style*/
+@media (max-width: 1920px) {
+	.home .max-width {
+		margin-left: 0;
+	}
+	.menu-btn {
+		display: none;
+		z-index: 999;
+	}
+	@media (max-width: 1104px) {
+		.about .about-content .left img {
+			height:350px;
+			width: 350px;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.max-width {
+		padding: 0 50px;
+	}
+}
+@media (max-width: 947px){
+	.home .home-content .text-2 {
+		font-size: 35px;
+	}
+	.menu-btn {
+		display: block;
+		z-index: 999;
+	}
+	.navbar .menu {
+		position: fixed;
+		height: 80vh;
+		width: 100%;
+		left: -100%;
+		top: 0;
+		background: gray;
+		opacity: 100%;
+		padding-top: 80px;
+		text-align: center;
+		transition: all 0.3s ease;
+	}
+
+	.navbar .menu.active {
+		left: 0;
+	}
+	.navbar .menu li {
+		display: block;
+
+	}
+	.navbar .menu li a {
+		display: inline-block;
+		margin: 20px;
+		font-size: 24px;
+		font-weight: 700;
+	}
+	.home .home-content a {
+		padding: 15px 20px;
+		font-size: 20px;
+	}
+	.max-width {
+		max-width: 930px;
+	}
+	.about .about-content .column-left, .column-right {
+		width: 100%;
+	}
+	.about .about-content .column-left {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto 60px;
+	}
+	.about .about-content .column-right {
+		flex: 100%;
+
+	}
+	.services .services-content .card {
+		width: calc(50% - 10px);
+		margin-bottom: 35px;
+		
+	}
+	.skills .skills-content .column,
+	.contact .contact-content .column {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+}
+@media (max-width: 690px) {
+	.max-width {
+		padding: 0 23px;
+
+	}
+	.services .services-content .card {
+		width: 100%;
+		margin-bottom: 35pxs;
+
+	}
+	/*.services .services-content {
+		height:;
+	}*/
+}
+@media (max-width: 690px) {
+	.contact .contact-content .left .text {
+		width: 50%;
+		align-items: center;
+	}
+	.contact .contact-content .right {
+	position: relative;
+	left: 300px;
+	bottom: 350px;
+	}
+}
+@media (max-width: 492px) {
+	.contact .contact-content .right {
+	position: relative;
+	left: 180px;
+	bottom: 280px;
+
+	}
+	.contact .contact-content .left p {
+	font-size: 18px;
+	}
+	.contact .contact-content .left .text {
+		font-size: 20px;
+		color: black;
+	}
+	.contact .title {
+		padding-bottom: 20px;
+	}
+
+}
